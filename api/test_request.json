@@ -1,0 +1,8 @@
+{
+    "traffic": 150,
+    "latency": 12,
+    "jitter": 3,
+    "slice_type": 1,
+    "slice_id": "embb-01",
+    "ts": 1734380000
+  }
