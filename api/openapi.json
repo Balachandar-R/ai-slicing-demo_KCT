@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.1",
+    "info": { "title": "AI Slicing API", "version": "1.0.0" },
+    "paths": {
+      "/predict": {
+        "post": {
+          "x-amazon-apigateway-integration": {
+            "uri": "arn:aws:apigateway:REGION:lambda:path/2015-03-31/functions/LAMBDA_ARN/invocations",
+            "httpMethod": "POST",
+            "type": "aws_proxy"
+          },
+          "requestBody": {
+            "required": true,
+            "content": { "application/json": { "schema": { "type": "object" } } }
+          },
+          "responses": { "200": { "description": "OK" } }
+        }
+      }
+    }
+  }
